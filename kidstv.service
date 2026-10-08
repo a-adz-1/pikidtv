@@ -1,0 +1,17 @@
+[Unit]
+Description=PiKidTV - offline kids TV player and web UI
+After=network-online.target local-fs.target sound.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pikidtv
+Group=pikidtv
+SupplementaryGroups=video render audio
+WorkingDirectory=/home/pikidtv
+ExecStart=/usr/bin/python3 -u /home/pikidtv/kidstv.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

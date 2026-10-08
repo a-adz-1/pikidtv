@@ -1,0 +1,18 @@
+# Per-install runtime data
+state.json
+presets.json
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Media and bedtime files
+videos/
+bedtime/
+*.mp4
+*.mkv
+*.avi
+*.mov

@@ -1,0 +1,2 @@
+# On Raspberry Pi OS, install with apt instead: sudo apt install python3-flask
+flask>=2.2
